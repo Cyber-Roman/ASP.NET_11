@@ -1,0 +1,18 @@
+﻿
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ID</td>
+            <td>@product.Name</td>
+            <td>@product.Price $</td>
+        </tr>
+    }
+</table>
